@@ -1,10 +1,11 @@
 "use client";
 import { useState } from "react";
+import { cn } from "@/lib/utils";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardDescription, CardFooter, CardHeader, CardTitle } from "@/components/ui/card";
 import { Input } from "@/components/ui/input";
 import { NavigationMenu, NavigationMenuItem, NavigationMenuLink, NavigationMenuList } from "@/components/ui/navigation-menu";
-import { cn } from "@/lib/utils";
+import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion";
 
 export default function Home() {
   const [brand, setBrand] = useState("");
@@ -55,7 +56,7 @@ export default function Home() {
           </div>
         </section>
 
-        <section>
+        <section className="mb-12">
           <h2 className="text-xl font-semibold mb-4">Card</h2>
           <Card className="w-96">
             <CardHeader>
@@ -70,6 +71,25 @@ export default function Home() {
             </CardFooter>
           </Card>
         </section>
+
+        <section className="mb-12">
+          <h2 className="text-xl font-semibold mb-4">Accordion</h2>
+          <Accordion type="single" collapsible className="w-96">
+            <AccordionItem value="item-1">
+              <AccordionTrigger>Was ist im Tarif enthalten?</AccordionTrigger>
+              <AccordionContent>Unbegrenzte Telefonie, SMS und 5 GB Datenvolumen.</AccordionContent>
+            </AccordionItem>
+            <AccordionItem value="item-2">
+              <AccordionTrigger>Wie kündige ich?</AccordionTrigger>
+              <AccordionContent>Kündigung jederzeit möglich mit 4 Wochen Frist.</AccordionContent>
+            </AccordionItem>
+            <AccordionItem value="item-3">
+              <AccordionTrigger>Gibt es Roaming?</AccordionTrigger>
+              <AccordionContent>Ja, EU-Roaming ist im Tarif inklusive.</AccordionContent>
+            </AccordionItem>
+          </Accordion>
+        </section>
+
       </main>
     </div>
   );
