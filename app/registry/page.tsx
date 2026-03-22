@@ -1,0 +1,96 @@
+"use client";
+import { useState } from "react";
+import { cn } from "@/lib/utils";
+import { Button } from "@/components/ui/button";
+import { Card, CardContent, CardDescription, CardFooter, CardHeader, CardTitle } from "@/components/ui/card";
+import { Input } from "@/components/ui/input";
+import { NavigationMenu, NavigationMenuItem, NavigationMenuLink, NavigationMenuList } from "@/components/ui/navigation-menu";
+import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion";
+
+export default function Registry() {
+  const [brand, setBrand] = useState("");
+
+  return (
+    <div className={cn("font-sans", brand)}>
+      <main className="p-16">
+        <div className="flex items-center gap-4 mb-12">
+          <h1 className="text-3xl font-bold">My Design System</h1>
+          <div className="flex gap-2 ml-8">
+            <button onClick={() => setBrand("")} className="px-4 py-2 border rounded text-sm font-medium">Telekom</button>
+            <button onClick={() => setBrand("brand-bmw")} className="px-4 py-2 border rounded text-sm font-medium">BMW</button>
+          </div>
+        </div>
+
+        <section className="mb-12">
+          <h2 className="text-xl font-semibold mb-4">Navigation</h2>
+          <NavigationMenu>
+            <NavigationMenuList>
+              <NavigationMenuItem>
+                <NavigationMenuLink href="#">Startseite</NavigationMenuLink>
+              </NavigationMenuItem>
+              <NavigationMenuItem>
+                <NavigationMenuLink href="#">Tarife</NavigationMenuLink>
+              </NavigationMenuItem>
+              <NavigationMenuItem>
+                <NavigationMenuLink href="#">Kontakt</NavigationMenuLink>
+              </NavigationMenuItem>
+            </NavigationMenuList>
+          </NavigationMenu>
+        </section>
+
+        <section className="mb-12">
+          <h2 className="text-xl font-semibold mb-4">Button</h2>
+          <div className="flex gap-4">
+            <Button>Primary</Button>
+            <Button variant="secondary">Secondary</Button>
+            <Button variant="outline">Outline</Button>
+            <Button variant="destructive">Destructive</Button>
+          </div>
+        </section>
+
+        <section className="mb-12">
+          <h2 className="text-xl font-semibold mb-4">Input</h2>
+          <div className="flex gap-4 max-w-md">
+            <Input placeholder="E-Mail Adresse" />
+            <Button>Absenden</Button>
+          </div>
+        </section>
+
+        <section className="mb-12">
+          <h2 className="text-xl font-semibold mb-4">Card</h2>
+          <Card className="w-96">
+            <CardHeader>
+              <CardTitle>Tarif Magenta S</CardTitle>
+              <CardDescription>Ideal für den Alltag</CardDescription>
+            </CardHeader>
+            <CardContent>
+              <p>Unbegrenzte Telefonie & SMS, 5 GB Datenvolumen.</p>
+            </CardContent>
+            <CardFooter>
+              <Button>Jetzt buchen</Button>
+            </CardFooter>
+          </Card>
+        </section>
+
+        <section className="mb-12">
+          <h2 className="text-xl font-semibold mb-4">Accordion</h2>
+          <Accordion type="single" collapsible className="w-96">
+            <AccordionItem value="item-1">
+              <AccordionTrigger>Was ist im Tarif enthalten?</AccordionTrigger>
+              <AccordionContent>Unbegrenzte Telefonie, SMS und 5 GB Datenvolumen.</AccordionContent>
+            </AccordionItem>
+            <AccordionItem value="item-2">
+              <AccordionTrigger>Wie kündige ich?</AccordionTrigger>
+              <AccordionContent>Kündigung jederzeit möglich mit 4 Wochen Frist.</AccordionContent>
+            </AccordionItem>
+            <AccordionItem value="item-3">
+              <AccordionTrigger>Gibt es Roaming?</AccordionTrigger>
+              <AccordionContent>Ja, EU-Roaming ist im Tarif inklusive.</AccordionContent>
+            </AccordionItem>
+          </Accordion>
+        </section>
+
+      </main>
+    </div>
+  );
+}
