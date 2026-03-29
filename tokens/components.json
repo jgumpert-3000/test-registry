@@ -1,0 +1,47 @@
+{
+  "components": {
+    "button": {
+      "padding-x": { "value": "{spacing.4}", "type": "spacing" },
+      "padding-x-sm": { "value": "{spacing.3}", "type": "spacing" },
+      "padding-x-lg": { "value": "{spacing.6}", "type": "spacing" },
+      "padding-y": { "value": "{spacing.2}", "type": "spacing" },
+      "padding-y-sm": { "value": "{spacing.1_5}", "type": "spacing" },
+      "padding-y-lg": { "value": "{spacing.2}", "type": "spacing" },
+      "gap": { "value": "{spacing.1}", "type": "spacing" },
+      "gap-lg": { "value": "{spacing.1_5}", "type": "spacing" },
+      "icon-padding-l": { "value": "{spacing.2}", "type": "spacing" },
+      "icon-padding-r": { "value": "{spacing.2}", "type": "spacing" }
+    },
+    "card": {
+      "padding": { "value": "{spacing.6}", "type": "spacing" },
+      "padding-sm": { "value": "{spacing.4}", "type": "spacing" },
+      "header-gap": { "value": "{spacing.1}", "type": "spacing" },
+      "content-gap": { "value": "{spacing.3}", "type": "spacing" },
+      "footer-gap": { "value": "{spacing.4}", "type": "spacing" },
+      "section-padding-x": { "value": "{spacing.6}", "type": "spacing" },
+      "section-padding-y": { "value": "{spacing.6}", "type": "spacing" },
+      "section-padding-y-sm": { "value": "{spacing.4}", "type": "spacing" },
+      "footer-padding-top": { "value": "{spacing.0}", "type": "spacing" }
+    },
+    "input": {
+      "padding-x": { "value": "{spacing.2_5}", "type": "spacing" },
+      "padding-y": { "value": "{spacing.1}", "type": "spacing" }
+    },
+    "accordion": {
+      "item-padding-y": { "value": "{spacing.2_5}", "type": "spacing" },
+      "item-padding-top": { "value": "{spacing.0}", "type": "spacing" },
+      "content-padding-bottom": { "value": "{spacing.2_5}", "type": "spacing" },
+      "item-margin-bottom": { "value": "{spacing.4}", "type": "spacing" }
+    },
+    "navigation": {
+      "item-gap": { "value": "{spacing.2}", "type": "spacing" },
+      "item-gap-sm": { "value": "{spacing.0}", "type": "spacing" },
+      "item-padding-x": { "value": "{spacing.2_5}", "type": "spacing" },
+      "item-padding-y": { "value": "{spacing.1_5}", "type": "spacing" },
+      "trigger-padding": { "value": "{spacing.1}", "type": "spacing" },
+      "trigger-padding-lg": { "value": "{spacing.2}", "type": "spacing" },
+      "indicator-margin-top": { "value": "{spacing.1_5}", "type": "spacing" },
+      "link-margin-left": { "value": "{spacing.1}", "type": "spacing" }
+    }
+  }
+}

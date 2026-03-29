@@ -114,6 +114,49 @@
   --spacing-16: 64px;
   --spacing-20: 80px;
   --spacing-24: 96px;
+
+  /* Button Tokens */
+  --button-padding-x: var(--spacing-4);
+  --button-padding-x-sm: var(--spacing-3);
+  --button-padding-x-lg: var(--spacing-6);
+  --button-padding-y: var(--spacing-2);
+  --button-padding-y-sm: var(--spacing-1_5);
+  --button-padding-y-lg: var(--spacing-2);
+  --button-gap: var(--spacing-1);
+  --button-gap-lg: var(--spacing-1_5);
+  --button-icon-padding-l: var(--spacing-2);
+  --button-icon-padding-r: var(--spacing-2);
+
+  /* Card Tokens */
+  --card-padding: var(--spacing-6);
+  --card-padding-sm: var(--spacing-4);
+  --card-header-gap: var(--spacing-1);
+  --card-content-gap: var(--spacing-3);
+  --card-footer-gap: var(--spacing-4);
+  --card-section-padding-x: var(--spacing-6);
+  --card-section-padding-y: var(--spacing-6);
+  --card-section-padding-y-sm: var(--spacing-4);
+  --card-footer-padding-top: var(--spacing-0);
+
+  /* Input Tokens */
+  --input-padding-x: var(--spacing-2_5);
+  --input-padding-y: var(--spacing-1);
+
+  /* Accordion Tokens */
+  --accordion-item-padding-y: var(--spacing-2_5);
+  --accordion-item-padding-top: var(--spacing-0);
+  --accordion-content-padding-bottom: var(--spacing-2_5);
+  --accordion-item-margin-bottom: var(--spacing-4);
+
+  /* Navigation Tokens */
+  --nav-item-gap: var(--spacing-2);
+  --nav-item-gap-sm: var(--spacing-0);
+  --nav-item-padding-x: var(--spacing-2_5);
+  --nav-item-padding-y: var(--spacing-1_5);
+  --nav-trigger-padding: var(--spacing-1);
+  --nav-trigger-padding-lg: var(--spacing-2);
+  --nav-indicator-margin-top: var(--spacing-1_5);
+  --nav-link-margin-left: var(--spacing-1);
 }
 
 .dark {
